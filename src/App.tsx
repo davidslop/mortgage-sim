@@ -11,15 +11,15 @@ import './App.css';
 // ── Default inputs ───────────────────────────────────────────────────
 
 const DEFAULT_INPUTS: MortgageInputs = {
-  principal: 405480,
-  termMonths: 360,
-  fixedMonths: 60,
-  fixedAnnualRate: 0.014,
-  euribor: 0.03,
-  spread: 0.0035,
-  capRate: 0.20,
+  principal: 0,
+  termMonths: 0,
+  fixedMonths: 0,
+  fixedAnnualRate: 0,
+  euribor: 0,
+  spread: 0,
+  capRate: 0,
   yearMode: 'blocks',
-  startYearMonth: '2026-03',
+  startYearMonth: '',
 };
 
 // ── Validation ───────────────────────────────────────────────────────
