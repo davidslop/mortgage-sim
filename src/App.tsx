@@ -47,7 +47,7 @@ export default function App() {
   const [amortizations, setAmortizations] = useState<AmortizationEntry[]>([]);
 
   // Debounced calculation
-  const debounceRef = useRef<ReturnType<typeof setTimeout>>();
+  const debounceRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const [calcInputs, setCalcInputs] = useState(inputs);
   const [calcAmorts, setCalcAmorts] = useState(amortizations);
 

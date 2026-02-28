@@ -45,10 +45,6 @@ function calendarYear(m: number, startYear: number, startMonth: number): number 
   return startYear + Math.floor((startMonth - 1 + m - 1) / 12);
 }
 
-function calendarMonth(m: number, startMonth: number): number {
-  return ((startMonth - 1 + m - 1) % 12) + 1;
-}
-
 // ── Engine ───────────────────────────────────────────────────────────
 
 export interface CalculationResult {

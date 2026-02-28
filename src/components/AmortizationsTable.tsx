@@ -7,14 +7,12 @@ function NumericCell({
   onCommit,
   className,
   min,
-  step,
   integer,
 }: {
   value: number;
   onCommit: (v: number) => void;
   className?: string;
   min?: number;
-  step?: string;
   integer?: boolean;
 }) {
   const [text, setText] = useState(() => String(value));
@@ -134,7 +132,6 @@ export default function AmortizationsTable({ entries, onChange }: Props) {
                     value={e.amount}
                     className="medium"
                     min={0}
-                    step="100"
                     onCommit={(v) => update(e.id, { amount: v })}
                   />
                 </td>
